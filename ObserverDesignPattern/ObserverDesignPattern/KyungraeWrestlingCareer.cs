@@ -11,7 +11,9 @@ namespace ObserverDesignPattern
 
         public void SendMatchResult()
         {
+            Console.WriteLine("What happened in the match today?");
             string matchResult = Console.ReadLine();
+            Console.WriteLine("\n");
             WrestlingMatch match = new WrestlingMatch(matchResult);
             NotifyObserver(match);
         }
